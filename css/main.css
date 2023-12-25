@@ -98,11 +98,7 @@ img {
     right: 10px;
     z-index: 1030;
     transition: all 0.3s;
-    border-radius: 8px;
-    border-radius: 8px;
-    
     border-radius: 8px; 
-    
 }
 
 .ir-arriba:hover{
