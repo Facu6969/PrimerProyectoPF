@@ -437,16 +437,17 @@ img {
 }
 
 .reserva{
+    padding: 15px;
     background: rgb(194, 36, 110);
     font-weight: 400;
     text-align: center;
     font-size: 10px;
     display: flex;
-    justify-content:space-between;
+    justify-content:space-around;
 }
 
 /* media */
-@media screen and (max-width: 756px){
+@media screen and (max-width: 786px){
 
     .header{
         padding: 20px;
