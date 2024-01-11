@@ -21,6 +21,12 @@ img {
     max-width: 100%;
 }
 
+body{
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
 /*menu barra*/
 
 .header {
@@ -444,6 +450,10 @@ img {
     font-size: 10px;
     display: flex;
     justify-content:space-around;
+}
+
+.btn{
+    text-align: center;
 }
 
 /* media */
