@@ -1,0 +1,61 @@
+.header {
+    width: 100%;
+    background: linear-gradient(
+        90deg,
+        rgb(25, 7, 61) 0,
+        rgb(78, 12, 53)95%
+    );
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5px;
+    
+    position: sticky ;
+    top: 0;
+    z-index: 1000;
+
+    .logo{
+        margin-right: auto;
+
+        .logo-inicio {
+            height: 70px;
+            width: auto;
+            padding: 5px;
+            border-radius: 20px;
+            transition: all 0.8s;
+        }
+
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+
+    #menu{
+        display: none;
+    }
+    
+    .menu{
+        cursor: pointer;
+        display: none;
+
+        .menu-icono{
+            width: 25px;
+        }
+    }
+
+    .menu1 {
+        display: flex;
+        gap: 5rem;
+
+        .menu-link {
+            color: rgb(214, 231, 113);
+            transition: all 30ms;
+            font-weight: 500;
+            padding: 0 5px;
+
+            &:hover{
+                color: rgb(255, 255, 255);
+            }
+        }
+    }
+}

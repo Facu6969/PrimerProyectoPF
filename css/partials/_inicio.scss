@@ -1,0 +1,75 @@
+.party-title {
+    text-align: center;
+    font-size: 3rem;
+    background-color: rgb(214, 231, 113);
+    margin-bottom: 1rem;
+}
+
+.card{
+    border: 1px solid white;
+    text-align: center;
+    .card-title {
+        font-size: 2.5rem;
+        font-weight:700;
+    }
+    .card-text {
+        font-size: 2rem;
+    }
+}
+
+
+
+.boxs {
+    display: flex;
+    .box-1 {
+        background-color: rgb(43, 11, 73);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .box-2 {
+        background-color: rgb(125, 34, 133);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .box-3 {
+        background-color: rgb(194, 36, 110);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+
+    .box {
+        flex: 1;
+        padding: 1rem;
+        color: white;
+
+        .box-icon {
+            color: white;
+            margin-bottom: 1rem;
+
+            &:hover{
+                color: black;
+            }
+        }
+
+        .box-title {
+            font-size: 2rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+        
+        .box-text {
+            font-size: 1.5rem;
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+    }
+}
+
+

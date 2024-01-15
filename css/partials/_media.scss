@@ -1,0 +1,70 @@
+@media screen and (max-width: 786px){
+
+    .header{
+        padding: 20px;
+
+        .menu{
+            display: initial;
+        }
+
+        .navbar{
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: linear-gradient(
+            90deg,
+            rgba(25, 7, 61, 0.774) 0,
+            rgba(78, 12, 53, 0.712)95%);
+            clip-path: polygon(100% 0, 100% 0, 100% 0%, 100% 0);
+            transition: clip-path .8s ease-in-out;
+
+            .menu1{
+                display: contents;
+
+                .menu-item{
+                    width: 100%;
+                    text-align: right;
+                    margin: 1.5rem 0;
+                    padding: 10px ;
+                    transition: all 0.5s;
+
+                    &:hover{
+                        background: rgba(0, 0, 0, 0.589);
+                    }
+
+                    .menu-link{
+                        font-size:x-large;
+                    }
+                   
+                }
+            }
+        }
+    }
+
+    #menu:checked ~.navbar {
+        clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%); 
+        
+
+    }
+
+    .boxs{
+        flex-direction: column;
+
+        .box{
+            margin-bottom: 5px;
+        }
+    }
+
+    
+
+    .info-form{
+        flex-direction: column;
+
+        .descrip-form{
+            width: 100%;
+            text-align: center;
+        }
+    }
+   
+}
