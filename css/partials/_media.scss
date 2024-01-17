@@ -1,3 +1,12 @@
+@media screen and (max-width: 2300px){
+    .columna2{
+        width: 98%;
+        a{
+            width: 31%;
+        }
+    }
+}
+
 @media screen and (max-width: 786px){
 
     .header{
@@ -25,8 +34,7 @@
                 .menu-item{
                     width: 100%;
                     text-align: right;
-                    margin: 1.5rem 0;
-                    padding: 10px ;
+                    padding: 10px;
                     transition: all 0.5s;
 
                     &:hover{
@@ -66,5 +74,21 @@
             text-align: center;
         }
     }
+
+    .columna2{
+        width: 98%;
+        a{
+            width: 46%;
+        }
+    }
    
+}
+
+@media screen and (max-width: 570px){
+    .columna2{
+        width: 95%;
+        a{
+            width: 100%;
+        }
+    }
 }
