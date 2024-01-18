@@ -81,6 +81,38 @@
             width: 46%;
         }
     }
+
+    .amigos{
+        h2{
+            &::after{
+                width: 200px;
+                right: -300px;
+                
+            }
+        }
+    }
+    
+    .tarjeta-amigos{
+        h2{
+            &::after{
+                width: 220px;
+                right: -280px;
+                
+                
+            }
+    
+            
+        }
+    
+        .tarjeta-amigo{
+            flex-direction: column;
+    
+            .tarjeta-amigo1, .tarjeta-amigo2, .tarjeta-amigo3, .tarjeta-amigo4, .tarjeta-amigo5, .tarjeta-amigo6{
+                width: auto;
+    
+            }
+        }
+    }
    
 }
 
@@ -89,6 +121,38 @@
         width: 95%;
         a{
             width: 100%;
+        }
+    }
+
+    .amigos{
+        h2{
+            &::after{
+                width: 100px;
+                right: -130px;
+                
+            }
+        }
+    }
+    
+    .tarjeta-amigos{
+        h2{
+            &::after{
+                width: 90px;
+                right: -110px;
+                
+                
+            }
+    
+            
+        }
+    
+        .tarjeta-amigo{
+            flex-direction: column;
+    
+            .tarjeta-amigo1, .tarjeta-amigo2, .tarjeta-amigo3, .tarjeta-amigo4, .tarjeta-amigo5, .tarjeta-amigo6{
+                width: auto;
+    
+            }
         }
     }
 }

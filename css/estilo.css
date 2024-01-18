@@ -406,25 +406,90 @@ body {
   cursor: pointer;
 }
 
+.amigos {
+  margin: 20px;
+}
 .amigos h2 {
   display: inline-block;
   position: relative;
   color: rgb(194, 36, 110);
+  font-weight: 900;
+  font-size: xx-large;
+  margin: 40px;
 }
 .amigos h2::after {
   content: "";
   position: absolute;
-  width: 2180px;
-  height: 3px;
+  width: 900px;
+  height: 2px;
   background-color: currentColor;
   top: 0.6em;
-  right: -2220px;
-  transform: scale(0);
-  transition: all 0.3s ease-in;
-}
-.amigos h2::after:hover {
+  right: -1020px;
   transform: scale(1);
-  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+.amigos h2:hover::after {
+  transform: scale(0);
+}
+.amigos div h3 {
+  padding: 10px;
+  font-weight: 900;
+}
+.amigos div p {
+  font-weight: 900;
+  font-size: large;
+  color: rgb(194, 36, 110);
+}
+
+.tarjeta-amigos {
+  margin: 20px;
+}
+.tarjeta-amigos h2 {
+  display: inline-block;
+  position: relative;
+  color: rgb(194, 36, 110);
+  font-weight: 900;
+  font-size: xx-large;
+  margin: 40px;
+}
+.tarjeta-amigos h2::after {
+  content: "";
+  position: absolute;
+  width: 920px;
+  height: 2px;
+  background-color: currentColor;
+  top: 0.6em;
+  right: -1000px;
+  transform: scale(1);
+  transition: all 0.2s ease-in;
+}
+.tarjeta-amigos h2:hover::after {
+  transform: scale(0);
+}
+.tarjeta-amigos .tarjeta-amigo {
+  display: flex;
+}
+.tarjeta-amigos .tarjeta-amigo .tarjeta-amigo1, .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo2, .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo3, .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo4, .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo5, .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo6 {
+  width: 400px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tarjeta-amigos .tarjeta-amigo .tarjeta-amigo1 h3, .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo2 h3, .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo3 h3, .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo4 h3, .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo5 h3, .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo6 h3 {
+  padding: 10px;
+  font-weight: 900;
+  color: black;
+  transition: all 0.2s ease;
+}
+.tarjeta-amigos .tarjeta-amigo .tarjeta-amigo1 h3:hover, .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo2 h3:hover, .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo3 h3:hover, .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo4 h3:hover, .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo5 h3:hover, .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo6 h3:hover {
+  color: rgb(214, 231, 113);
+  transform: scale(1.2);
+}
+.tarjeta-amigos .tarjeta-amigo .tarjeta-amigo1 p, .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo2 p, .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo3 p, .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo4 p, .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo5 p, .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo6 p {
+  font-weight: 900;
+  font-size: large;
+  color: rgb(194, 36, 110);
 }
 
 @media screen and (max-width: 2300px) {
@@ -492,6 +557,20 @@ body {
   .columna2 a {
     width: 46%;
   }
+  .amigos h2::after {
+    width: 200px;
+    right: -300px;
+  }
+  .tarjeta-amigos h2::after {
+    width: 220px;
+    right: -280px;
+  }
+  .tarjeta-amigos .tarjeta-amigo {
+    flex-direction: column;
+  }
+  .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo1, .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo2, .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo3, .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo4, .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo5, .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo6 {
+    width: auto;
+  }
 }
 @media screen and (max-width: 570px) {
   .columna2 {
@@ -499,5 +578,19 @@ body {
   }
   .columna2 a {
     width: 100%;
+  }
+  .amigos h2::after {
+    width: 100px;
+    right: -130px;
+  }
+  .tarjeta-amigos h2::after {
+    width: 90px;
+    right: -110px;
+  }
+  .tarjeta-amigos .tarjeta-amigo {
+    flex-direction: column;
+  }
+  .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo1, .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo2, .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo3, .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo4, .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo5, .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo6 {
+    width: auto;
   }
 }/*# sourceMappingURL=estilo.css.map */
