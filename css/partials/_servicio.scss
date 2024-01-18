@@ -1,0 +1,24 @@
+.amigos{
+    h2{
+        display: inline-block;
+        position: relative;
+        color: rgb(194, 36, 110);
+
+        &::after{
+            content: '';
+            position: absolute;
+            width: 2180px;
+            height: 3px;
+            background-color: currentColor;
+            top: .6em;
+            right: -2220px;
+            transform: scale(0);
+            transition: all 0.3s ease-in;
+
+            &:hover{
+                transform: scale(1);
+                cursor: pointer;
+            }
+        }
+    }
+}

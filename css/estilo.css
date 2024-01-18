@@ -406,6 +406,27 @@ body {
   cursor: pointer;
 }
 
+.amigos h2 {
+  display: inline-block;
+  position: relative;
+  color: rgb(194, 36, 110);
+}
+.amigos h2::after {
+  content: "";
+  position: absolute;
+  width: 2180px;
+  height: 3px;
+  background-color: currentColor;
+  top: 0.6em;
+  right: -2220px;
+  transform: scale(0);
+  transition: all 0.3s ease-in;
+}
+.amigos h2::after:hover {
+  transform: scale(1);
+  cursor: pointer;
+}
+
 @media screen and (max-width: 2300px) {
   .columna2 {
     width: 98%;
