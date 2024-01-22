@@ -1,3 +1,5 @@
+
+/* medias */
 @media screen and (max-width: 2300px){
     .columna2{
         width: 98%;
@@ -83,6 +85,7 @@
     }
 
     .amigos{
+
         h2{
             &::after{
                 width: 200px;
@@ -125,6 +128,7 @@
     }
 
     .amigos{
+        justify-content: center;
         h2{
             &::after{
                 width: 100px;
@@ -135,12 +139,11 @@
     }
     
     .tarjeta-amigos{
+        justify-content: center;
         h2{
             &::after{
                 width: 90px;
                 right: -110px;
-                
-                
             }
     
             

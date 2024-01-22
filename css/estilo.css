@@ -25,6 +25,7 @@ body {
   min-height: 100vh;
 }
 
+/* inicio navbar */
 .header {
   width: 100%;
   background: linear-gradient(90deg, rgb(25, 7, 61) 0, rgb(78, 12, 53) 95%);
@@ -73,6 +74,7 @@ body {
   color: rgb(255, 255, 255);
 }
 
+/* fin navbar */
 .ir-arriba {
   color: rgba(124, 16, 196, 0.623);
   background-color: rgba(255, 255, 255, 0.103);
@@ -88,6 +90,7 @@ body {
   background-color: rgb(214, 231, 113);
 }
 
+/* inicio de footer */
 .footer {
   width: 100%;
   display: flex;
@@ -119,6 +122,8 @@ body {
   transform: scale(1.5);
 }
 
+/* fin de footer */
+/*index*/
 .party-title {
   text-align: center;
   font-size: 3rem;
@@ -183,6 +188,8 @@ body {
   margin-bottom: 0.5rem;
 }
 
+/*fin index*/
+/* inicio contacto */
 .info-form {
   padding: 20px;
   width: 100%;
@@ -261,6 +268,8 @@ body {
   margin-right: 10px;
 }
 
+/*fin contacto */
+/*inicio Salon */
 .heros .salon {
   background: rgb(214, 231, 113);
   font-weight: 400px;
@@ -359,6 +368,8 @@ body {
   text-align: center;
 }
 
+/*fin de Salon */
+/*inicio de fotografias */
 .fotografia {
   background: rgb(214, 231, 113);
   font-weight: 400px;
@@ -406,10 +417,12 @@ body {
   cursor: pointer;
 }
 
-.amigos {
+/*fin de fotografias*/
+/* inicio servicio */
+.servicio .amigos {
   margin: 20px;
 }
-.amigos h2 {
+.servicio .amigos h2 {
   display: inline-block;
   position: relative;
   color: rgb(194, 36, 110);
@@ -417,7 +430,7 @@ body {
   font-size: xx-large;
   margin: 40px;
 }
-.amigos h2::after {
+.servicio .amigos h2::after {
   content: "";
   position: absolute;
   width: 900px;
@@ -428,23 +441,22 @@ body {
   transform: scale(1);
   transition: all 0.2s ease-in;
 }
-.amigos h2:hover::after {
+.servicio .amigos h2:hover::after {
   transform: scale(0);
 }
-.amigos div h3 {
+.servicio .amigos div h3 {
   padding: 10px;
   font-weight: 900;
 }
-.amigos div p {
+.servicio .amigos div p {
   font-weight: 900;
   font-size: large;
   color: rgb(194, 36, 110);
 }
-
-.tarjeta-amigos {
+.servicio .tarjeta-amigos {
   margin: 20px;
 }
-.tarjeta-amigos h2 {
+.servicio .tarjeta-amigos h2 {
   display: inline-block;
   position: relative;
   color: rgb(194, 36, 110);
@@ -452,7 +464,7 @@ body {
   font-size: xx-large;
   margin: 40px;
 }
-.tarjeta-amigos h2::after {
+.servicio .tarjeta-amigos h2::after {
   content: "";
   position: absolute;
   width: 920px;
@@ -463,35 +475,37 @@ body {
   transform: scale(1);
   transition: all 0.2s ease-in;
 }
-.tarjeta-amigos h2:hover::after {
+.servicio .tarjeta-amigos h2:hover::after {
   transform: scale(0);
 }
-.tarjeta-amigos .tarjeta-amigo {
+.servicio .tarjeta-amigos .tarjeta-amigo {
   display: flex;
 }
-.tarjeta-amigos .tarjeta-amigo .tarjeta-amigo1, .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo2, .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo3, .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo4, .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo5, .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo6 {
+.servicio .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo1, .servicio .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo2, .servicio .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo3, .servicio .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo4, .servicio .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo5, .servicio .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo6 {
   width: 400px;
   margin: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.tarjeta-amigos .tarjeta-amigo .tarjeta-amigo1 h3, .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo2 h3, .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo3 h3, .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo4 h3, .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo5 h3, .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo6 h3 {
+.servicio .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo1 h3, .servicio .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo2 h3, .servicio .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo3 h3, .servicio .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo4 h3, .servicio .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo5 h3, .servicio .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo6 h3 {
   padding: 10px;
   font-weight: 900;
   color: black;
   transition: all 0.2s ease;
 }
-.tarjeta-amigos .tarjeta-amigo .tarjeta-amigo1 h3:hover, .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo2 h3:hover, .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo3 h3:hover, .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo4 h3:hover, .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo5 h3:hover, .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo6 h3:hover {
+.servicio .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo1 h3:hover, .servicio .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo2 h3:hover, .servicio .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo3 h3:hover, .servicio .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo4 h3:hover, .servicio .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo5 h3:hover, .servicio .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo6 h3:hover {
   color: rgb(214, 231, 113);
   transform: scale(1.2);
 }
-.tarjeta-amigos .tarjeta-amigo .tarjeta-amigo1 p, .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo2 p, .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo3 p, .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo4 p, .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo5 p, .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo6 p {
+.servicio .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo1 p, .servicio .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo2 p, .servicio .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo3 p, .servicio .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo4 p, .servicio .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo5 p, .servicio .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo6 p {
   font-weight: 900;
   font-size: large;
   color: rgb(194, 36, 110);
 }
 
+/*fin de servicio */
+/* medias */
 @media screen and (max-width: 2300px) {
   .columna2 {
     width: 98%;
@@ -579,9 +593,15 @@ body {
   .columna2 a {
     width: 100%;
   }
+  .amigos {
+    justify-content: center;
+  }
   .amigos h2::after {
     width: 100px;
     right: -130px;
+  }
+  .tarjeta-amigos {
+    justify-content: center;
   }
   .tarjeta-amigos h2::after {
     width: 90px;
