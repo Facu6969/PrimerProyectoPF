@@ -505,13 +505,20 @@ body {
 }
 
 /*fin de servicio */
-/* medias */
 @media screen and (max-width: 2300px) {
   .columna2 {
     width: 98%;
   }
   .columna2 a {
     width: 31%;
+  }
+  .amigos h2::after {
+    width: 900px;
+    right: -1000px;
+  }
+  .tarjeta-amigos h2::after {
+    width: 920px;
+    right: -1020px;
   }
 }
 @media screen and (max-width: 786px) {
