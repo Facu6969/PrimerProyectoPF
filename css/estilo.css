@@ -63,6 +63,22 @@ body {
 .header .menu1 {
   display: flex;
   gap: 5rem;
+  /*
+  .desplegable{
+      li{
+          a{
+              background-color: black;
+              color: rgb(214, 231, 113);
+              text-decoration: none;
+              display: block;
+              padding: 10px 10px;
+              width: 200px;
+
+          }
+
+      }
+
+  }*/
 }
 .header .menu1 .menu-link {
   color: rgb(214, 231, 113);
@@ -444,13 +460,17 @@ body {
 .servicio .amigos h2:hover::after {
   transform: scale(0);
 }
+.servicio .amigos div {
+  max-width: 1300px;
+}
 .servicio .amigos div h3 {
   padding: 10px;
   font-weight: 900;
+  font-size: x-large;
 }
 .servicio .amigos div p {
   font-weight: 900;
-  font-size: large;
+  font-size: x-large;
   color: rgb(194, 36, 110);
 }
 .servicio .tarjeta-amigos {
@@ -490,6 +510,7 @@ body {
 }
 .servicio .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo1 h3, .servicio .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo2 h3, .servicio .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo3 h3, .servicio .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo4 h3, .servicio .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo5 h3, .servicio .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo6 h3 {
   padding: 10px;
+  font-size: x-large;
   font-weight: 900;
   color: black;
   transition: all 0.2s ease;
@@ -500,7 +521,7 @@ body {
 }
 .servicio .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo1 p, .servicio .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo2 p, .servicio .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo3 p, .servicio .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo4 p, .servicio .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo5 p, .servicio .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo6 p {
   font-weight: 900;
-  font-size: large;
+  font-size: x-large;
   color: rgb(194, 36, 110);
 }
 
@@ -512,13 +533,33 @@ body {
   .columna2 a {
     width: 31%;
   }
-  .amigos h2::after {
+  .servicio .amigos h2::after {
     width: 900px;
-    right: -1000px;
+    right: -1040px;
   }
-  .tarjeta-amigos h2::after {
+  .servicio .tarjeta-amigos h2::after {
     width: 920px;
     right: -1020px;
+  }
+}
+@media screen and (max-width: 1320px) {
+  .servicio .amigos h2::after {
+    width: 500px;
+    right: -640px;
+  }
+  .servicio .tarjeta-amigos h2::after {
+    width: 520px;
+    right: -620px;
+  }
+}
+@media screen and (max-width: 955px) {
+  .servicio .amigos h2::after {
+    width: 350px;
+    right: -490px;
+  }
+  .servicio .tarjeta-amigos h2::after {
+    width: 370px;
+    right: -470px;
   }
 }
 @media screen and (max-width: 786px) {
@@ -578,18 +619,24 @@ body {
   .columna2 a {
     width: 46%;
   }
-  .amigos h2::after {
-    width: 200px;
-    right: -300px;
+  .servicio .amigos {
+    justify-content: center;
   }
-  .tarjeta-amigos h2::after {
-    width: 220px;
+  .servicio .amigos h2::after {
+    width: 250px;
     right: -280px;
   }
-  .tarjeta-amigos .tarjeta-amigo {
+  .servicio .tarjeta-amigos {
+    justify-content: center;
+  }
+  .servicio .tarjeta-amigos h2::after {
+    width: 240px;
+    right: -260px;
+  }
+  .servicio .tarjeta-amigos .tarjeta-amigo {
     flex-direction: column;
   }
-  .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo1, .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo2, .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo3, .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo4, .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo5, .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo6 {
+  .servicio .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo1, .servicio .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo2, .servicio .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo3, .servicio .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo4, .servicio .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo5, .servicio .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo6 {
     width: auto;
   }
 }
@@ -600,24 +647,24 @@ body {
   .columna2 a {
     width: 100%;
   }
-  .amigos {
+  .servicio .amigos {
     justify-content: center;
   }
-  .amigos h2::after {
+  .servicio .amigos h2::after {
     width: 100px;
     right: -130px;
   }
-  .tarjeta-amigos {
+  .servicio .tarjeta-amigos {
     justify-content: center;
   }
-  .tarjeta-amigos h2::after {
+  .servicio .tarjeta-amigos h2::after {
     width: 90px;
     right: -110px;
   }
-  .tarjeta-amigos .tarjeta-amigo {
+  .servicio .tarjeta-amigos .tarjeta-amigo {
     flex-direction: column;
   }
-  .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo1, .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo2, .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo3, .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo4, .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo5, .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo6 {
+  .servicio .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo1, .servicio .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo2, .servicio .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo3, .servicio .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo4, .servicio .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo5, .servicio .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo6 {
     width: auto;
   }
 }/*# sourceMappingURL=estilo.css.map */

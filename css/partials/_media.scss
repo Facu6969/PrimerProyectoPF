@@ -5,31 +5,88 @@
             width: 31%;
         }
     }
-    .amigos{
+    
+    .servicio{
+        .amigos{
 
-        h2{
-            &::after{
-                width: 900px;
-                right: -1000px;
+            h2{
+                &::after{
+                    width: 900px;
+                    right: -1040px;
+                    
+                }
+            }
+        }
+        
+        .tarjeta-amigos{
+            h2{
+                &::after{
+                    width: 920px;
+                    right: -1020px;
+                    
+                    
+                }
+        
                 
             }
         }
     }
-    
-    .tarjeta-amigos{
-        h2{
-            &::after{
-                width: 920px;
-                right: -1020px;
-                
+}
+
+@media screen and (max-width: 1320px) {
+    .servicio{
+        .amigos{
+
+            h2{
+                &::after{
+                    width: 500px;
+                    right: -640px;
+                    
+                }
+            }
+        }
+        
+        .tarjeta-amigos{
+            h2{
+                &::after{
+                    width: 520px;
+                    right: -620px;
+                    
+                    
+                }
+        
                 
             }
-    
-            
         }
     }
-    
-       
+}
+
+@media screen and (max-width: 955px) {
+    .servicio{
+        .amigos{
+
+            h2{
+                &::after{
+                    width: 350px;
+                    right: -490px;
+                    
+                }
+            }
+        }
+        
+        .tarjeta-amigos{
+            h2{
+                &::after{
+                    width: 370px;
+                    right: -470px;
+                    
+                    
+                }
+        
+                
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 786px){
@@ -107,35 +164,36 @@
         }
     }
 
-    .amigos{
-
-        h2{
-            &::after{
-                width: 200px;
-                right: -300px;
-                
+    .servicio{
+        .amigos{
+            justify-content: center;
+            h2{
+                &::after{
+                    width: 250px;
+                    right: -280px;
+                    
+                }
             }
         }
-    }
-    
-    .tarjeta-amigos{
-        h2{
-            &::after{
-                width: 220px;
-                right: -280px;
-                
+        
+        .tarjeta-amigos{
+            justify-content: center;
+            h2{
+                &::after{
+                    width: 240px;
+                    right: -260px;
+                }
+        
                 
             }
-    
-            
-        }
-    
-        .tarjeta-amigo{
-            flex-direction: column;
-    
-            .tarjeta-amigo1, .tarjeta-amigo2, .tarjeta-amigo3, .tarjeta-amigo4, .tarjeta-amigo5, .tarjeta-amigo6{
-                width: auto;
-    
+        
+            .tarjeta-amigo{
+                flex-direction: column;
+        
+                .tarjeta-amigo1, .tarjeta-amigo2, .tarjeta-amigo3, .tarjeta-amigo4, .tarjeta-amigo5, .tarjeta-amigo6{
+                    width: auto;
+        
+                }
             }
         }
     }
@@ -150,34 +208,36 @@
         }
     }
 
-    .amigos{
-        justify-content: center;
-        h2{
-            &::after{
-                width: 100px;
-                right: -130px;
+    .servicio{
+        .amigos{
+            justify-content: center;
+            h2{
+                &::after{
+                    width: 100px;
+                    right: -130px;
+                    
+                }
+            }
+        }
+        
+        .tarjeta-amigos{
+            justify-content: center;
+            h2{
+                &::after{
+                    width: 90px;
+                    right: -110px;
+                }
+        
                 
             }
-        }
-    }
-    
-    .tarjeta-amigos{
-        justify-content: center;
-        h2{
-            &::after{
-                width: 90px;
-                right: -110px;
-            }
-    
-            
-        }
-    
-        .tarjeta-amigo{
-            flex-direction: column;
-    
-            .tarjeta-amigo1, .tarjeta-amigo2, .tarjeta-amigo3, .tarjeta-amigo4, .tarjeta-amigo5, .tarjeta-amigo6{
-                width: auto;
-    
+        
+            .tarjeta-amigo{
+                flex-direction: column;
+        
+                .tarjeta-amigo1, .tarjeta-amigo2, .tarjeta-amigo3, .tarjeta-amigo4, .tarjeta-amigo5, .tarjeta-amigo6{
+                    width: auto;
+        
+                }
             }
         }
     }
