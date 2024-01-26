@@ -35,7 +35,7 @@ body {
   padding: 5px;
   position: sticky;
   top: 0;
-  z-index: 1000;
+  z-index: 1020;
 }
 .header .logo {
   margin-right: auto;
@@ -60,34 +60,40 @@ body {
 .header .menu .menu-icono {
   width: 25px;
 }
-.header .menu1 {
+.header .navbar .menu1 {
   display: flex;
-  gap: 5rem;
-  /*
-  .desplegable{
-      li{
-          a{
-              background-color: black;
-              color: rgb(214, 231, 113);
-              text-decoration: none;
-              display: block;
-              padding: 10px 10px;
-              width: 200px;
-
-          }
-
-      }
-
-  }*/
+  gap: 3rem;
 }
-.header .menu1 .menu-link {
+.header .navbar .menu1 .menu-link {
   color: rgb(214, 231, 113);
   transition: all 30ms;
   font-weight: 500;
   padding: 0 5px;
 }
-.header .menu1 .menu-link:hover {
+.header .navbar .menu1 .menu-link:hover {
   color: rgb(255, 255, 255);
+}
+.header .navbar .menu1 .vertical .desplegable {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px 5px 0 5px;
+  display: none;
+}
+.header .navbar .menu1 .vertical .desplegable li {
+  margin-bottom: 10px;
+}
+.header .navbar .menu1 .vertical .desplegable li:hover {
+  background-color: rgba(246, 248, 248, 0.411);
+}
+.header .navbar .menu1 .vertical .desplegable li a {
+  padding: 5px;
+  color: rgb(214, 231, 113);
+}
+.header .navbar .menu1 .vertical .desplegable li a:hover {
+  color: white;
+}
+.header .navbar .menu1 .vertical:hover .desplegable {
+  display: block;
 }
 
 /* fin navbar */
@@ -140,23 +146,24 @@ body {
 
 /* fin de footer */
 /*index*/
-.party-title {
+.presentacion .party-title {
   text-align: center;
   font-size: 3rem;
   background-color: rgb(214, 231, 113);
   margin-bottom: 1rem;
 }
-
-.card {
+.presentacion .card {
   border: 1px solid white;
   text-align: center;
 }
-.card .card-title {
+.presentacion .card .card-title {
   font-size: 2.5rem;
   font-weight: 700;
 }
-.card .card-text {
-  font-size: 2rem;
+.presentacion .card .card-text {
+  font-family: "Courier New", Courier, monospace;
+  font-size: larger;
+  font-weight: 600;
 }
 
 .boxs {
@@ -199,7 +206,9 @@ body {
   margin-bottom: 0.5rem;
 }
 .boxs .box .box-text {
-  font-size: 1.5rem;
+  font-family: "Courier New", Courier, monospace;
+  font-size: larger;
+  font-weight: 600;
   text-align: center;
   margin-bottom: 0.5rem;
 }
@@ -225,11 +234,12 @@ body {
   font-size: 35px;
 }
 .info-form .descrip-form p {
-  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: larger;
   line-height: 1.6;
   padding: 5px;
   margin-bottom: 30px;
-  font-weight: 500;
+  font-weight: 600;
 }
 .info-form .descrip-form a {
   font-size: 20px;
@@ -469,8 +479,10 @@ body {
   font-size: x-large;
 }
 .servicio .amigos div p {
-  font-weight: 900;
-  font-size: x-large;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+  font-size: larger;
+  padding: 10px;
   color: rgb(194, 36, 110);
 }
 .servicio .tarjeta-amigos {
@@ -510,6 +522,7 @@ body {
 }
 .servicio .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo1 h3, .servicio .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo2 h3, .servicio .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo3 h3, .servicio .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo4 h3, .servicio .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo5 h3, .servicio .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo6 h3 {
   padding: 10px;
+  text-align: center;
   font-size: x-large;
   font-weight: 900;
   color: black;
@@ -520,8 +533,9 @@ body {
   transform: scale(1.2);
 }
 .servicio .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo1 p, .servicio .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo2 p, .servicio .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo3 p, .servicio .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo4 p, .servicio .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo5 p, .servicio .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo6 p {
-  font-weight: 900;
-  font-size: x-large;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+  font-size: larger;
   color: rgb(194, 36, 110);
 }
 
@@ -537,6 +551,10 @@ body {
     width: 900px;
     right: -1040px;
   }
+  .servicio .amigos .linea::after {
+    width: 920px;
+    right: -1000px;
+  }
   .servicio .tarjeta-amigos h2::after {
     width: 920px;
     right: -1020px;
@@ -547,6 +565,10 @@ body {
     width: 500px;
     right: -640px;
   }
+  .servicio .amigos .linea::after {
+    width: 520px;
+    right: -600px;
+  }
   .servicio .tarjeta-amigos h2::after {
     width: 520px;
     right: -620px;
@@ -554,15 +576,19 @@ body {
 }
 @media screen and (max-width: 955px) {
   .servicio .amigos h2::after {
-    width: 350px;
-    right: -490px;
+    width: 340px;
+    right: -480px;
+  }
+  .servicio .amigos .linea::after {
+    width: 370px;
+    right: -440px;
   }
   .servicio .tarjeta-amigos h2::after {
-    width: 370px;
-    right: -470px;
+    width: 360px;
+    right: -455px;
   }
 }
-@media screen and (max-width: 786px) {
+@media screen and (max-width: 768px) {
   .header {
     padding: 20px;
   }
@@ -587,14 +613,31 @@ body {
   .header .navbar .menu1 .menu-item {
     width: 100%;
     text-align: right;
-    padding: 10px;
     transition: all 0.5s;
+    margin-top: 10px;
   }
   .header .navbar .menu1 .menu-item:hover {
     background: rgba(0, 0, 0, 0.589);
   }
   .header .navbar .menu1 .menu-item .menu-link {
     font-size: x-large;
+  }
+  .header .navbar .menu1 .vertical .desplegable {
+    position: sticky;
+    width: 100%;
+    padding: 10px;
+    display: none;
+    background-color: rgba(248, 245, 245, 0);
+  }
+  .header .navbar .menu1 .vertical .desplegable li a {
+    font-size: x-large;
+    color: rgb(214, 231, 113);
+  }
+  .header .navbar .menu1 .vertical .desplegable li a:hover {
+    color: white;
+  }
+  .header .navbar .menu1 .vertical li:hover ul {
+    display: block;
   }
   #menu:checked ~ .navbar {
     -webkit-clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
@@ -626,6 +669,10 @@ body {
     width: 250px;
     right: -280px;
   }
+  .servicio .amigos .linea::after {
+    width: 230px;
+    right: -250px;
+  }
   .servicio .tarjeta-amigos {
     justify-content: center;
   }
@@ -638,6 +685,40 @@ body {
   }
   .servicio .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo1, .servicio .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo2, .servicio .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo3, .servicio .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo4, .servicio .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo5, .servicio .tarjeta-amigos .tarjeta-amigo .tarjeta-amigo6 {
     width: auto;
+  }
+}
+@media screen and (max-width: 640px) {
+  .footer {
+    display: inline;
+  }
+  .footer .footer-1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .footer .footer-1 p {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .footer .footer-2 {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  .footer .footer-2 .formulario-1 {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer .footer-2 .formulario-1 label {
+    text-align: center;
+  }
+  .footer .footer-3 ul {
+    display: flex;
+    justify-content: space-around;
   }
 }
 @media screen and (max-width: 570px) {
@@ -653,6 +734,10 @@ body {
   .servicio .amigos h2::after {
     width: 100px;
     right: -130px;
+  }
+  .servicio .amigos .linea::after {
+    width: 90px;
+    right: -100px;
   }
   .servicio .tarjeta-amigos {
     justify-content: center;

@@ -16,6 +16,12 @@
                     
                 }
             }
+            .linea{
+                &::after{
+                    width: 920px;
+                    right: -1000px;
+                }
+            }
         }
         
         .tarjeta-amigos{
@@ -44,6 +50,12 @@
                     
                 }
             }
+            .linea{
+                &::after{
+                    width: 520px;
+                    right: -600px;
+                }
+            }
         }
         
         .tarjeta-amigos{
@@ -67,9 +79,15 @@
 
             h2{
                 &::after{
-                    width: 350px;
-                    right: -490px;
+                    width: 340px;
+                    right: -480px;
                     
+                }
+            }
+            .linea{
+                &::after{
+                    width: 370px;
+                    right: -440px;
                 }
             }
         }
@@ -77,8 +95,8 @@
         .tarjeta-amigos{
             h2{
                 &::after{
-                    width: 370px;
-                    right: -470px;
+                    width: 360px;
+                    right: -455px;
                     
                     
                 }
@@ -89,7 +107,7 @@
     }
 }
 
-@media screen and (max-width: 786px){
+@media screen and (max-width: 768px){
 
     .header{
         padding: 20px;
@@ -116,8 +134,8 @@
                 .menu-item{
                     width: 100%;
                     text-align: right;
-                    padding: 10px;
                     transition: all 0.5s;
+                    margin-top: 10px;
 
                     &:hover{
                         background: rgba(0, 0, 0, 0.589);
@@ -127,6 +145,33 @@
                         font-size:x-large;
                     }
                    
+                }
+                .vertical{
+                    .desplegable{
+                        position: sticky;
+                        width: 100%;
+                        padding: 10px;
+                        display: none;
+                        background-color: rgba(248, 245, 245, 0);
+                        
+                        
+                        li{
+                            
+                            a{
+                                font-size: x-large;
+                                color: rgb(214, 231, 113);
+                                &:hover{
+                                    color: white;
+                                }
+                            }
+                            
+                            
+                        }
+                        
+                    }
+                    li:hover ul{
+                        display: block;
+                    }
                 }
             }
         }
@@ -174,6 +219,12 @@
                     
                 }
             }
+            .linea{
+                &::after{
+                    width: 230px;
+                    right: -250px;
+                }
+            }
         }
         
         .tarjeta-amigos{
@@ -200,6 +251,45 @@
    
 }
 
+@media screen and (max-width: 640px){
+    .footer{
+        display: inline;
+        .footer-1{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            p{
+                text-align: center;
+                margin-bottom: 20px;
+            }
+        }
+        .footer-2{
+            width: 100%;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            .formulario-1{
+                max-width: 400px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                label{
+                    text-align: center;
+                }
+                
+            }
+        }
+
+        .footer-3{
+            ul{
+                display: flex;
+                justify-content: space-around;
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 570px){
     .columna2{
         width: 95%;
@@ -216,6 +306,12 @@
                     width: 100px;
                     right: -130px;
                     
+                }
+            }
+            .linea{
+                &::after{
+                    width: 90px;
+                    right: -100px;
                 }
             }
         }

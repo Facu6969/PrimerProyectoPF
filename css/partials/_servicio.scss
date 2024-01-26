@@ -41,8 +41,10 @@
                 font-size: x-large;
             }
             p{
-                font-weight: 900;
-                font-size: x-large;
+                font-family: 'Courier New', Courier, monospace;
+                font-weight:600;
+                font-size:larger;
+                padding: 10px;
                 color: rgb(194, 36, 110);
             }
         }
@@ -88,6 +90,7 @@
                 align-items: center;
                 h3{
                     padding: 10px;
+                    text-align: center;
                     font-size: x-large;
                     font-weight: 900;
                     color: black;
@@ -99,8 +102,9 @@
                     }
                 }
                 p{
-                    font-weight: 900;
-                    font-size: x-large;
+                    font-family: 'Courier New', Courier, monospace;
+                    font-weight: 600;
+                    font-size: larger;
                     color: rgb(194, 36, 110);
                 }
     
