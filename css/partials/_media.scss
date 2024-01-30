@@ -1,3 +1,4 @@
+/* media */
 @media screen and (max-width: 2300px){
     .columna2{
         width: 98%;
@@ -13,7 +14,6 @@
                 &::after{
                     width: 900px;
                     right: -1040px;
-                    
                 }
             }
             .linea{
@@ -32,8 +32,6 @@
                     
                     
                 }
-        
-                
             }
         }
     }
@@ -47,7 +45,6 @@
                 &::after{
                     width: 500px;
                     right: -640px;
-                    
                 }
             }
             .linea{
@@ -66,8 +63,6 @@
                     
                     
                 }
-        
-                
             }
         }
     }
@@ -100,8 +95,6 @@
                     
                     
                 }
-        
-                
             }
         }
     }
@@ -216,7 +209,6 @@
                 &::after{
                     width: 250px;
                     right: -280px;
-                    
                 }
             }
             .linea{
@@ -234,8 +226,6 @@
                     width: 240px;
                     right: -260px;
                 }
-        
-                
             }
         
             .tarjeta-amigo{
@@ -243,7 +233,6 @@
         
                 .tarjeta-amigo1, .tarjeta-amigo2, .tarjeta-amigo3, .tarjeta-amigo4, .tarjeta-amigo5, .tarjeta-amigo6{
                     width: auto;
-        
                 }
             }
         }
@@ -277,7 +266,6 @@
                 label{
                     text-align: center;
                 }
-                
             }
         }
 
@@ -305,7 +293,6 @@
                 &::after{
                     width: 100px;
                     right: -130px;
-                    
                 }
             }
             .linea{
@@ -323,8 +310,6 @@
                     width: 90px;
                     right: -110px;
                 }
-        
-                
             }
         
             .tarjeta-amigo{
@@ -332,7 +317,35 @@
         
                 .tarjeta-amigo1, .tarjeta-amigo2, .tarjeta-amigo3, .tarjeta-amigo4, .tarjeta-amigo5, .tarjeta-amigo6{
                     width: auto;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 420px){
+    .servicio{
+        .amigos{
+            justify-content: center;
+            h2{
+                &::after{
+                    width: 0;
+                    right: 0;
+                }
+            }
+            .linea{
+                &::after{
+                    width: 0;
+                    right: 0;
+                }
+            }
+        }
         
+        .tarjeta-amigos{
+            justify-content: center;
+            h2{
+                &::after{
+                    width: 0;
+                    right: 0;
                 }
             }
         }
